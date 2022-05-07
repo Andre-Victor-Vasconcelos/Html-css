@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico.ico" type="image/x-icon">
+    <style>
+        mark{background-color: rgb(251, 255, 20);}
+    </style>
+</head>
+
+
+<body>
+<h1>Olá, mundo</h1>
+<hr>
+<h2>Olá brasil</h2>
+<hr>
+<h3>Esse é meu 1° html</h3>
+<hr>
+<h4>muito bom essa descoberta</h4>
+<hr>
+<!--hr é linha horizontal-->
+<!--p é parágrafo-->
+<h1>Parágrafos e quebra de linhas</h1>
+
+Você pode escrever com paragráfo de qualquer 
+
+jeito,basta colocar tudo no meio do par de tags p e /p </p>
+
+se precisar quebrar o texto em um lugar específico <br> 
+
+<p>pode usar a tag &lt;br&gt;</p>
+
+<!--lt é é less then gt é greater then--> 
+
+   <h1>
+    Vamos adicionar símbolos especiais e imagens
+   </h1>
+    
+    <p><mark>Vamos adicionar emoji:</mark> <br>
+    &#x1F920;
+    &#x1F600;
+    &#x2764;
+    </p>
+
+    <p><mark>Vamos adicionar imagens:</mark> <br>
+    <img src="logo-html-reduzido.png" alt="Logo Html5"> <br>
+    <img src="css-logo-redimensionado.png" alt="logo css">
+    </p>
+    <p><mark>Também é possível colar imagem direto da internet:</mark><br>
+       <img src="https://static.macupdate.com/products/62498/m/runjs-logo.webp?v=1649314222" alt="Logo javascript">    </p>
+
+
+
+<p><mark>Agora vou adicionar a favicon, olhar pra esquerda em cima</mark> </p>
+<br>
+<p>Vamos agora de &RightArrow;  <strong> negrito </strong> e &rightarrow; <em>itálico</em> </p>
+<br>
+<p> <h1>Formatações adicionais</h1><br>
+<BIG>TEXTO GRANDE</BIG><br>
+<SMALL>TEXTO PEQUENO</SMALL><br>
+<DEL>TEXTO DELETADO</DEL><br>
+<INS>TEXTO SUBLINHADO</INS><br>
+TEXTO SUBESCRITO(H<SUB>2</SUB>O) <br> 
+TEXTO SUPERSCRITO x<sup>2</sup> -1 <br>
+</p>
+<p><mark>para códigos, usa o comando code e pre para manter a organização </mark> </p>
+<pre>
+    <code>
+        name  = input("What is your name?")
+        quest = input("What is your quest?")
+        color = input("What is your favorite color?")
+    
+        print("Ah, so your name is %s, your quest is %s, " \
+        "and your favorite color is %s." % (name, quest, color) ) -->
+    </code>
+</pre>
+
+<p> <mark>Citações eu uso o q</mark>  </p> 
+Já dizia vovó - <q>água mole pedra dura, tanto bate até que fura</q>
+
+<p> <mark>marcações completas eu uso blockquote</mark>  </p>
+<p>Como diria o pensador:</p>
+<blockquote cite="https://www.pensador.com/frase/NDYxOA/ ">
+    
+    A amizade desenvolve a felicidade e reduz o sofrimento, duplicando a nossa alegria e dividindo a nossa dor.
+
+
+</blockquote> 
+
+<p><mark>Vamos ver tag pop ups explicativas</mark></p> <br>
+Estou estudando <abbr title="Hyper text markup">HTML</abbr> <br>
+E também estou estudando <abbr title="cascading styles sheets">CSS</abbr>
+<br>
+<strong><h1>Vamos estudar listas</h1></strong>
+<h2>Listas ordenadas</h2>
+<ol type="I">
+<li>vou acordar</li>
+<li>vou tomar café</li>
+<li>vou escovar os dentes</li>
+<li>vou estudar</li>
+</ol>
+<h2>Listas não ordenadas</h2>
+<ul type="square" > <!--type disc, circle e square--> 
+    <li>comprar leite</li>
+    <li>comprar tomate</li>
+    <li>comprar leite</li>
+    <li>comprar sal</li>
+</ul>
+
+
+<h2>Meus videogames e jogos favoritos</h2>
+<ol>
+    <li>Super nitendo</li>
+<ul>
+    <li>Mario</li>
+    <li>Kirby</li>
+    <li>007</li>
+
+
+
+</ul>
+
+<li>PlayStation2</li>
+<ul>
+<li>naruto
+</li>
+<li>god of war</li>
+<li>fifa</li>
+</ul>
+<li>Nitendo wii</li>
+<ul><li>mario kart</li>
+<li>mario galaxy</li>
+<li>mario party</li>
+</ul>
+
+</ol>
+
+<p><h2>Criando referência hipertexto para outra página:</h2>
+</p>
+<p>Você pode acessar meu trabalho academico no <a href="https://youtu.be/ImEU5ArMUv0" target="_blank" rel="external">youtube</a> <!-- target="_blank" rel="external esse dois servem pra abrir outra aba
+PARA CRIAR UM LINK PATROCINADO QUE EU NÃO CONFIE, POSSO USAT rel = "nofollow"-->
+
+<p>Você pode acessar meu trabalho academico no sem abrir nova aba <a href="https://youtu.be/ImEU5ArMUv0" target="_self" rel="external">youtube</a>
+
+    <p>Essa é a primeira página de meu site, se quiser ir pra 2° clique <a href="pag002.html">aqui</a> 
+        <p>Essa é a primeira página de meu site, se quiser ir pra 3° clique <a href="pag003.html">aqui</a> 
+
+<h2>Aprendendo a criar link para downloads</h2>
+<ul>
+<li><a href="pdf_sample_2 (1).pdf"type="aplication/pdf">Livro pdf 1</a> </li>
+<li> <a href="exemplo-de-pdf.pdf"type= "aplication/pdf">Livro pdf 2</a>  </li>
+
+</ul>
+
+
+</body>
+
+</html>
+
+

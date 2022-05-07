@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+@font-face {
+    font-family: 'love';
+    src: url('fonts/barcade/barcade.ttf') format('truetype'); 
+
+}
+@font-face {
+
+    font-family: 'ctricks'; 
+    src: url('fonts/hanging_letters/Hanged\ Letters.ttf') format('truetype');
+
+}
+
+
+body{ background-image: linear-gradient(to left ,#BFBFBF, #4C5958 );
+    font-size: 16px; }
+/*to right, to bottom, to top, 45deg,-45deg,*/
+
+main{background-color: #10403B;
+    width: 600px;
+    padding: 10px;
+    margin:auto;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+
+
+h1{ color: aliceblue;
+text-align: center;
+text-shadow: 3px 3px 5px black;
+font: bolder 50px 'love', sans-serif;}
+
+.sub{ 
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    font: bold 50px 'ctricks', sans-serif;}
+/*shorthand para mudar a fonte* a ordem é: estilo, destaque(negrito),tamanho, nome da fonte */
+.sub2{  
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    font: normal 40px 'ctricks', sans-serif;}
+
+
+h2{color: aliceblue;
+    text-shadow: 3px 3px 5px black;
+    font: bold 20px 'Chelsea Market', sans-serif;
+    text-align: left;
+
+
+}
+p{color: rgba(240, 248, 255, 0.878);
+    text-shadow: 2px 2px 2px black;
+    font: bolder 20px 'Nova mono', sans-serif;
+    text-align: justify;
+
+    
+
+/* so faltoutext-align: right*/
+}
+/* <style>
+*{ height: 100%;}
+
+body{ background-image: linear-gradient(to top, #33434C, #584249 , #7A4142 , #9B433B, #B74034);
+background-attachment: fixed; 
+to right, to top, to left, 45 deg, - 45 deg...
+}   </style>*/
+
+.destaque{ 
+    background-color:rgb(0, 0, 0);
+}
+
+div{
+    display: inline-block;
+    background-color: #BFBFBF;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+
+}
+
+div:hover{
+    background-color: chartreuse;
+
+
+}
+
+
+.div2{
+    display: ;
+    background-color: #10403B;
+    border: 1px solid #10403B;
+    text-align: center;
+    height: ; /*200px*/
+    width: ; /*200px*/
+
+}
+.div2:hover{
+    background-color: chartreuse;
+
+
+}
+
+.h2pseudo{
+
+    text-align: center;
+}
+
+a{ color: cornsilk;
+    text-decoration: none;
+
+}
+
+a:visited{ 
+    color: cornsilk;
+}
+a:hover{ 
+    text-decoration: underline;
+}
+
+a:active {color: aqua;}
+
+a::after{
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: red;
+
+}
+/* seletores personalizados:
+# = id
+. = class
+:= pseudo class
+::=pseudo element
+> : children
