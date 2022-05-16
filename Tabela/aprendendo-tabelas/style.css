@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table
+{
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+    box-shadow: 10px 10px 10px black;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+thead{
+
+    background-color: gray;
+    color: white;
+}
+
+caption{
+padding: 10px;
+}
+
+tbody>tr:nth-child(2n-1)
+{
+background-color: rgb(222, 222, 222);
+
+}
+
+thead>tr>th{
+position: sticky;
+top: 0;
+background-color: gray;
+
+
+}
+
+col.c1{
+background-color: darkseagreen;
+
+}
+
+col.c2{
+background-color: bisque;
+
+}
+
+div#container
+{
+    overflow-x: auto;
+
+
+}
