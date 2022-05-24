@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+body{
+background-image: linear-gradient( to right, rgb(236, 211, 211), rgb(251, 159, 159));
+
+}
+
+p.underline{
+text-decoration: underline;}
+
+main{
+
+    width: 600px;
+    padding: 10px;
+    height: 700px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px black;
+}
+
+h1{
+
+    text-align: center;
+    text-shadow: 10px 10px 20px;
+}
