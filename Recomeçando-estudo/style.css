@@ -8,3 +8,10 @@ background-image: linear-gradient( to right, rgb(236, 211, 211), rgb(251, 159, 1
 
 p.underline{
 text-decoration: underline;}
+
+footer{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}

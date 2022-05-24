@@ -25,3 +25,10 @@ h1{
     text-align: center;
     text-shadow: 10px 10px 20px;
 }
+
+footer{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
