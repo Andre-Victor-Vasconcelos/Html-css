@@ -13,7 +13,6 @@ div
     align-items: center;
     border: solid 5px black;
     margin: 5px auto 5px;
-    text-align: center;
 }
 
 header{
@@ -22,3 +21,13 @@ text-align: center;
 text-decoration: underline;
 }
 
+footer{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20pt;
+    
+}
