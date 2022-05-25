@@ -8,11 +8,11 @@ div
     color: rgb(199, 220, 239);
     font-size: 20pt;
     margin: 0 auto 0 auto;
-    text-align: 5px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid 5px black;
+    margin: 5px auto 5px;
 }
 
 header{
