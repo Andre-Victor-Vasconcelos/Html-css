@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+li
+{
+    background-color: rgb(214, 251, 253);
+    width: 200px;
+    color: rgb(199, 220, 239);
+    text-decoration: none;
+    font-size: 20pt;
+
+
+}
