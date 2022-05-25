@@ -1,12 +1,23 @@
 @charset "UTF-8";
 
-li
+div
 {
     background-color: rgb(214, 251, 253);
     width: 200px;
+    height: 200px;
     color: rgb(199, 220, 239);
-    text-decoration: none;
     font-size: 20pt;
-
-
+    margin: 0 auto 0 auto;
+    text-align: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px black;
 }
+
+header{
+font-size: 25pt;
+text-align: center;
+text-decoration: underline;
+}
+
