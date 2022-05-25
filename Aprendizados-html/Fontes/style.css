@@ -1,12 +1,39 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Gloria+Hallelujah&display=swap');
 @font-face {
-    font-family: Book+Ends ;
-    src: url(book_ends/Book+Ends.otf) format(opentype);
+    font-family: 'Book' ;
+    src: url('book_ends/Book+Ends.otf') format('opentype');
 }
 
 li#google{
 font-family: 'Blaka Hollow', cursive;
-font-size: 20pt;
+font-size: 40pt;
 
 }
+
+li#externa{
+font-family: 'Book';
+font-size: 40pt;
+}
+
+li#subl{
+font-family: Verdana, Tahoma, sans-serif;
+font-size:  20pt;
+text-decoration: underline;
+    }
+
+li#it{
+font-family: Verdana, Tahoma, sans-serif;
+font-size: 20pt;
+font-style: italic;
+}
+li#bold{
+font-family: Verdana, Tahoma, sans-serif;
+font-size: 20pt;
+font-weight: bold;
+}
+li#light{
+font-family: Verdana, Tahoma, sans-serif;
+font-size: 20pt;
+text-transform: uppercase;
+                }
