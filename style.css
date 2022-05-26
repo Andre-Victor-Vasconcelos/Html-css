@@ -41,4 +41,21 @@ text-align: center;
 text-decoration: underline;
 }
 
+a{
+    color: crimson;
+}
 
+a:active{
+
+    color: black;
+}
+
+a:hover{
+
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+a:visited{
+color: brown;
+}
