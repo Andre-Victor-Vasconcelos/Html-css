@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 
+
+
 body{
-background-image: linear-gradient( to right, rgb(236, 211, 211), rgb(251, 159, 159));
+background-image: linear-gradient( to bottom, rgb(236, 211, 211), rgb(251, 159, 159));
 
 }
 
@@ -11,13 +13,16 @@ text-decoration: underline;}
 
 main{
 
-    width: 600px;
+    width: auto;
     padding: 10px;
     height: 700px;
-    margin: auto;
+    margin: auto 40px auto 40px ;
     background-color: aliceblue;
     border-radius: 50px;
     box-shadow: 10px 10px 20px black;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
