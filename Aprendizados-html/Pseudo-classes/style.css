@@ -37,9 +37,19 @@ div.text_hidden:hover>p{
 
     display:block ;
 }
+
 p{
     text-align: center;
 }
 
 
 
+footer{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20pt;
+}
