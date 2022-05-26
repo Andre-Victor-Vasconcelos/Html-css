@@ -43,6 +43,7 @@ text-decoration: underline;
 
 a{
     color: crimson;
+    text-decoration: none;
 }
 
 a:active{
@@ -57,5 +58,5 @@ a:hover{
 }
 
 a:visited{
-color: brown;
+color: rgb(0, 0, 0);
 }
