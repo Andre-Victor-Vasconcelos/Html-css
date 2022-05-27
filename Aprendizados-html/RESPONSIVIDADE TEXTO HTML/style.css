@@ -1,0 +1,20 @@
+/*reset padrão*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    border: solid black;
+}
+section#n1{
+    background-color: blue;
+}
+section#n2{
+    background-color: blueviolet;
+}
