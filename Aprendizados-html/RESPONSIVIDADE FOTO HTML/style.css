@@ -1,0 +1,23 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+
+img{
+width: 100%;
+
+
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+font-variant: small-caps;
+font-size: larger;
+text-align: center;
+
+}
