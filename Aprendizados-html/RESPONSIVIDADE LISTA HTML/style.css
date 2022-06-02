@@ -24,7 +24,7 @@ ol{
     height: 250px;
     list-style-position: inside;
     columns: 2;
-    list-style-type: georgian;
+    list-style-type: '\1F525';
     
 }
 footer{
