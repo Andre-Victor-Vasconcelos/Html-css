@@ -1,0 +1,38 @@
+h1{text-align: center;}
+h2{text-align: center;}
+
+aside{
+    background-color: lightblue;
+    text-align: center;
+    border: solid black 5px;
+    margin: auto;
+    max-width: 700px;
+
+}
+
+
+ul{
+padding-top: 100px;
+list-style-position: inside;    
+height: 250px;
+columns: 2;
+
+}
+
+ol{
+    padding-top: 100px;
+    height: 250px;
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: georgian;
+    
+}
+footer{
+
+    background-color: black;
+    color: white;
+    font-variant: small-caps;
+    font-size: larger;
+    text-align: center;
+    
+    }
