@@ -16,6 +16,8 @@ padding-top: 100px;
 list-style-position: inside;    
 height: 250px;
 columns: 2;
+list-style-type: '\1F525';
+
 
 }
 
@@ -24,7 +26,7 @@ ol{
     height: 250px;
     list-style-position: inside;
     columns: 2;
-    list-style-type: '\1F525';
+    list-style-type: decimal;
     
 }
 footer{
