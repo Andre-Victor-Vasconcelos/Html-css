@@ -6,20 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    padding-top: 20px;
+html{
+    height: 100vh;
 }
 
 main{
 
-    background-color: aliceblue;
-    padding: 20px;
-   max-width: 800px;
-   min-width: 320px;
-   margin: auto;
-   height: auto;
-   border: solid black 3px;
-   padding-top: 30px;
+   background-color: aliceblue;
+   padding: 20px;
+   align-items: center;
+   align-content: center;
+   min-width: 400px;
+   max-width: 1245px;
 
 
 }
@@ -31,6 +29,7 @@ color: white;
 font-variant: small-caps;
 font-size: larger;
 text-align: center;
+
 
 }
 
