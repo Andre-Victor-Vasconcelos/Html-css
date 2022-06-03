@@ -6,16 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    table,td{
+    table,td, thead, tbody, th{
         border: solid black 4px;
         border-collapse: collapse;
-        width: 30%;
-        padding: 8px;
+        width: 50%;
+        margin: auto;
+        align-items: center;
         text-align: center;
         vertical-align: middle;
         
     }
+    table{
+        position: relative;
+    }
+
+    tbody>tr:nth-child(2n-1){
+        background-color: gray;
+    }
     
+    caption{
+        background-color: black;
+        color: white;
+        border: solid gray 5px;
+    }
+
+    caption
+    {
+position: sticky;
+top: 0;
+background-color: black;
+
+}
+footer{
+
+background-color: black;
+color: white;
+font-variant: small-caps;
+font-size: larger;
+text-align: center;
+
+}
+
+a{
+    color: white;
+}
+a:hover{
+    color: red;
+    background-color: blue;
+}
 
     </style>
 </head>
@@ -38,37 +76,178 @@ section - Não use o elemento <section> como um container genérico; para isso q
 
 nav - O Elemento HTML de Navegação (<nav>) representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação.
     
+caption - descrição da tabela
+
+colspan ="2" (é mesclagem de celulas NA coluna)
+rowspan ="2" (é mesclagem de celulas NA linha)
 -->
 <table>
 <tr>
 <td>A1</td>
 <td>B1</td>
-<td>C1</td>
+
 </tr>
 <tr>
 <td>A2</td>
 <td>B2</td>
-<td>C2</td>
+
 </tr>
 <tr>
 <td>A3</td>
 <td>B3</td>
-<td>C3</td>
+
 </tr>
     
 <tr>
 <td>A4</td>
 <td>B4</td>
-<td>C4</td>
+
 </tr>
-</table>
+</table> <br>
 
 <!-- Hierarquia de tabela grandes
     table - tag
-        table row(tr) - linha de tabela
-            table header - cabeçalho
-                table data(td) - dado da tabela
+        thead(tr,td,th)
+            tbody(tr,td,th)
+                tfoot(tr,td,th)
+                colocar scope no th e dizer de onde pertence o dado col = coluna e row = linha
 -->
+<div>
+    <table>
+    <thead>
+    <caption>População por estado</caption>
+    <tr>
+    <th scope="col">Estado</th>
+    <th scope="col">População</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+    <td>São Paulo</td>
+    <td>50000</td>
+    
+    </tr>
+    
+    <tr>
+    <td> Minas Gerais</td>
+    <td>40000</td>
+    
+    </tr>
+    
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    <tr>
+    <td> Rio de Janeiro</td>
+    <td>30000</td>
+    
+    </tr>
+    
+    
+    </tbody>
+    
+    <tfoot>
+        <tr>
+            <th scope="row"> Total de habitantes</th>
+            <td>1000000000</td>
+        </tr>
+    
+    </tfoot>
+    
+    </table>
+</div>
+
     
 </body>
+<footer> <a href="linhadecodigo.html">a linha de código usado foi</a> </footer>
+
 </html>

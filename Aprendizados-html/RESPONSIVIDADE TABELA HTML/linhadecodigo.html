@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Código html</h1>
+    <p>Observações: <br>
+    Hierarquia de tabela simples <br>
+    table - tag <br>
+        table row(tr) - linha de tabela <br>
+            table header - cabeçalho <br>
+                table data(td) - dado da tabela <br><br>
+
+
+Tags semânticas :<br>
+aside - O elemento HTML representa uma seção de uma página que consiste de conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo. Essas seções são, muitas vezes, representadas como barras laterais.<br><br>
+
+article - O Elemento HTML Article representa uma composição independente em um documento, página, aplicação, ou site, ou que é destinado a ser distribuido de forma independente ou reutilizável, por exemplo, em sindicação. Este poderia ser o post de um fórum, um artigo de revista ou jornal, um post de um blog, um comentário enviado por um usuário, um gadget ou widget interativos, ou qualquer outra forma de conteúdo independente.<br><br>
+
+main - O elemento define o conteúdo principal dentro do em seu documento ou aplicação.<br><br>
+
+section - Não use o elemento como um container genérico; para isso que a serve, especialmente quando a seção é apenas com propósito de estilização. Uma regra de ouro é ,"usar quando uma seção deve aparecer logicamente na estrutura de um documento".<br><br>
+
+nav - O Elemento HTML de Navegação representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação.<br><br>
+    
+caption - descrição da tabela<br><br>
+
+colspan ="2" (é mesclagem de celulas NA coluna)<br><br>
+rowspan ="2" (é mesclagem de celulas NA linha)<br>
+
+<img src="tabela simples.png" alt=""><br><br>
+<img src="tabela composta.png" alt="">
+
+    
+    </p>
+
+<h1>Código CSS</h1>
+<pre>
+style
+        table,td, thead, tbody, th{
+            border: solid black 4px;
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+        table{
+            position: relative;
+        }
+    
+        tbody>tr:nth-child(2n-1){
+            background-color: gray;
+        }
+        
+        caption{
+            background-color: black;
+            color: white;
+            border: solid gray 5px;
+        }
+    
+        caption
+        {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    
+    }
+    footer{
+    
+    background-color: black;
+    color: white;
+    font-variant: small-caps;
+    font-size: larger;
+    text-align: center;
+    
+    }
+    
+    a{
+        color: white;
+    }
+    a:hover{
+        color: red;
+        background-color: blue;
+    }
+    
+style
+</pre>
+
+</body>
+</html>
