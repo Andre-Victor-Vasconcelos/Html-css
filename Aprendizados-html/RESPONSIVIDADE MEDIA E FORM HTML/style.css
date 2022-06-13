@@ -4,3 +4,25 @@
     margin: 0;
     box-sizing: 0;
 }
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background-color: gray;
+}
+
+section{
+background-color: white;
+/* 30px superior e inferior, 5px direita e esquerda*/
+padding: 30px 5px;
+border-radius: 10px;
+/*direita, baixo, degradê*/
+box-shadow: 10px 5px 15px;
+max-width: 70vw;
+}
+section>h1{
+    padding: 40px 10px;
+    text-align: center;
+}
