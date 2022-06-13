@@ -26,3 +26,73 @@ section>h1{
     padding: 40px 10px;
     text-align: center;
 }
+
+fieldset{
+    border: none;
+}
+
+fieldset:nth-child(1) /*nome/sobrenome*/
+{
+    display: flex;
+
+}
+fieldset:nth-child(2) /*email*/
+{
+
+}
+fieldset:nth-child(3) /*senha*/
+{
+    display: flex;
+    padding-top: 20px;
+
+}
+fieldset:nth-child(4) /*termos de uso*/
+{
+display: flex;
+width: 100%;
+margin-top: 20px;
+padding: 0px 10px;
+}
+
+/*100% - 20px que foi a margem adicionada de cada lado(10+10)*/
+.container input{
+margin: 10px 10px;
+width: calc(100%-20px);
+height: 70px;
+border: none;
+background-color: gray;
+border-radius: 4px;
+color: #333;
+font-size: 18px;
+font-weight: 700;
+/*superior,direito,inferior, esquerdo*/
+padding: 14px 10px 0px 10px;
+
+}
+
+.container{
+    position: relative;
+}
+
+
+.container label{
+font-size: 18px;
+font-variant: small-caps;
+font-weight: bold;
+font-family: fantasy;
+position: absolute;
+line-height: 70px;
+top: 10px;
+left: 20px;
+user-select: none;
+pointer-events: none;
+transition: 0.5s;
+
+}
+
+
+ .container input:focus ~ label, .container input:valid ~ label {
+left: 20px;
+top: -10px;
+color: rgb(69, 7, 7);
+}
