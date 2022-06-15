@@ -96,3 +96,24 @@ left: 20px;
 top: -10px;
 color: rgb(69, 7, 7);
 }
+
+#check input
+{
+width: 25px;
+height: 25px;
+margin: auto 0;
+}
+
+#check label {
+    margin:  10px;
+    color: #555;
+    transition: 0.2s;
+}
+
+#check input:checked ~ label, #check input:valid ~ label{
+    color: rgb(52, 149, 52)
+}
+
+button{
+    
+}
