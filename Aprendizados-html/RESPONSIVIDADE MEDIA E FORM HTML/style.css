@@ -1,173 +1,354 @@
 @charset "UTF-8";
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/* Define as propriedades a todos os elementos 
+   da página.*/
+* {
+	/* Remove a margem externa de todos os lados 
+	   do elemento.*/
+	margin: 0;
+
+	/* Remove o espaçamento interno de todos os 
+	   lados do elemento. */
+	padding: 0;
+
+	/* O preenchimento e a borda serão incluídos 
+	   na largura e na altura. */
+	box-sizing: border-box;
+
+	/* Define o tipo da fonte.*/
+	font-family: "Ubuntu", sans-serif;
 }
 
-body{
-display: flex;
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-background-color: gray;
+body {
+	/* Cor do elemento */
+	background-color: #2e2e2e;
+
+	/*Torna o elemento um flex container, 
+	  transformando todos os seus elementos 
+	  internos (filhos) em flex itens.*/
+	display: flex;
+
+	/*Alinha os flex itens de acordo com o eixo 
+	  do container. */
+	align-items: center;
+
+	/*Alinha os itens flex no container de 
+	  acordo com a direção. */
+	justify-content: center;
+
+	/* Altura mínima do elemento. */
+	/* Unidades de tamanho da tela vh e vw. */
+	min-height: 100vh;
+
+	/* Cor do elemento */
+	background-color: #2e2e2e;
 }
 
-section{
-background-color: white;
-/* 30px superior e inferior, 5px direita e esquerda*/
-padding: 30px 5px;
-border-radius: 10px;
-/*direita, baixo, degradê*/
-box-shadow: 10px 5px 15px;
-max-width: 70vw;
-display: flex;
+div#parallelogram {
+	/* Cor do elemento */
+	background: #00acd7;
+
+	/* Define a largura do elemento. */
+	width: 1000px;
+
+	/* Define a altura do elemento. */
+	height: 720px;
+
+	/* Delimita o tamamnho máximo do elemento.*/
+	max-width: 70vw;
+
+	/* Arredonda cantos. */
+	border-radius: 10px;
+
+	/* Adiciona sombra nos elementos. */
+	box-shadow: 5px 5px 15px;
+
+	/* Modifica a inclinação do elemento em 
+	   um plano 2D. */
+	/* Parâmetros: eixo x , eixo y. em graus.*/
+	transform: skew(6deg, 3deg);
+
+	/* Posiciona qualquer elemento de acordo com 
+	   o elemento pai, Deixando de fazer parte do 
+	   fluxo comum do documento.*/
+	position: absolute;
+
+    /* Define a ordem dos elementos quando 
+       sobrepostos.*/
+   	z-index: -1;
 }
-section>h1{
-    padding: 40px 10px;
-    text-align: center;
+
+section {
+	display: flex;
+
+	background: #fff;
+
+	/*Gerar espaço ao redor do conteúdo do elemento
+	  30px superior e inferior
+	  5px para a esquerda e direita. */
+	padding: 30px 5px;
+
+	/* Arredonda cantos. */
+	border-radius: 10px;
+
+	/* Adiciona sombra nos elementos */
+	box-shadow: 5px 5px 15px;
+
+	/* Tamanho máximo do elemento*/
+	max-width: 70vw;
+}
+
+section h1 {
+	padding: 40px 10px;
+	text-align: center;
 }
 
 fieldset{
-    border: none;
+	/* Remove a borda. */
+	border:none;
 }
 
-fieldset:nth-child(1) /*nome/sobrenome*/
-{
-    display: flex;
-
-}
-fieldset:nth-child(2) /*email*/
-{
-width: 100%;
-}
-fieldset:nth-child(3) /*senha*/
-{
-    display: flex;
-    padding-top: 20px;
-
-}
-fieldset:nth-child(4) /*termos de uso*/
-{
-display: flex;
-width: 100%;
-margin-top: 20px;
-padding: 0px 10px;
+fieldset:nth-child(2) {
+	/* Vai alinhar os elementos 
+	   um ao lado do outro. */
+	display: flex;
 }
 
-/*100% - 20px que foi a margem adicionada de cada lado(10+10)*/
-.container input{
-margin: 10px 10px;
-width: calc(100%-20px);
-height: 70px;
-border: none;
-background-color: gray;
-border-radius: 4px;
-color: #333;
-font-size: 18px;
-font-weight: 700;
-/*superior,direito,inferior, esquerdo*/
-padding: 14px 10px 0px 10px;
+fieldset:nth-child(4) {
+	display: flex;
 
+	/* Adiciona margem na parte superior. */
+	padding-top: 20px;
 }
 
-
-.container{
-    position: relative;
+fieldset:nth-child(5) {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	padding: 0px 10px;
 }
 
-
-.container label{
-font-size: 18px;
-font-variant: small-caps;
-font-weight: bold;
-font-family: fantasy;
-position: absolute;
-line-height: 70px;
-top: 10px;
-left: 20px;
-user-select: none;
-pointer-events: none;
-transition: 0.5s;
-
+fieldset:last-child {
+	
 }
 
- .container input:focus ~ label, .container input:valid ~ label {
-left: 20px;
-top: -10px;
-color: rgb(69, 7, 7);
+.container {
+	/* Tipo de método de posicionamento de um elemento (estático, relativo, fixo, absoluto ou aderente)
+	/* Definido como relative, indica que está posicionado em relação à sua posição normal. 
+	Outro conteúdo não será ajustado para caber em qualquer lacuna deixada pelo elemento.*/
+
+	/* relative - indica que esta posicionado
+	   em relação à sua posição normal. */
+	position: relative;
 }
 
-#check input
-{
-width: 25px;
-height: 25px;
-margin: auto 0;
+.container input {
+	margin: 10px 10px;
+
+	/* Define a largura do elemento. */
+	width: calc(100% - 20px);
+
+	/* Defina a altura do elementos. */
+	height: 70px;
+
+	/* Remove a borda. */
+	border: none;
+
+	background-color: #ededed;
+	border-radius: 4px;
+	color: #333;
+
+	/* Tamanho da fonte.*/
+	font-size: 18px;
+
+	/* Aumenta a largura do contorno do texto.*/
+	font-weight: 700;
+
+	/* Gera espaço ao redor do conteúdo do elemento
+	   (superior, direito, inferior e esquerdo) */
+	padding: 14px 10px 0 10px;
+}
+
+.container label {
+	/* Tranforma o texto deixando todas as letras
+	   em maiúsculo. */
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: #9d9d9d;
+
+	/* Posiciona qualquer elemento de acordo com o 
+	   elemento pai, deixando de fazer parte do fluxo 
+	   comum do documento.*/
+	position: absolute;
+	
+	/* Defina a altura entre linha. */
+	line-height: 70px;
+
+	/* Posição vertical que necessita que o elemento 
+	   tenha uma posição determinada. */
+	top: 10px;
+
+	/* Distância da borda esquerda.*/
+	left: 20px;
+
+	/* Impede a seleção de texto.*/
+	user-select: none;
+
+	/* Se o elemento deve agir ou não a
+	   eventos do ponteiro. */
+	pointer-events: none;
+
+	/* Altera os valores das propriedades
+	   suavemente em um tempo determinado.*/
+	transition: 0.5s;
+}
+
+/* ~ - Quando ocorrer o foco no input 
+   altere as propriedades do label. */
+.container input:focus ~ label,
+.container input:valid ~ label {
+	left: 20px;
+	top: -10px;
+	color: #00acd7;
+}
+
+#check {
+	width: 50%;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: flex;
+}
+
+#check input{
+
+	/* Define a largura do elemento. */
+	width: 25px;
+
+	/* Defina a altura do elementos. */
+	height: 25px;
+
+	/* auto - Centraliza o elemento na horizontal.
+	   0 - Não altera a margem esquerda e direita. */
+	margin: auto 0;
+
+	/* Gera espaço ao redor do conteúdo do elemento
+	   (superior, direito, inferior e esquerdo) */
+	/*padding: 14px 60px 0 10px;*/
 }
 
 #check label {
-    margin:  10px;
-    color: #555;
-    transition: 0.2s;
+
+	margin: auto 10px;
+
+	color: #555;
+	transition: 0.5s
 }
 
-#check input:checked ~ label, #check input:valid ~ label{
-    color: rgb(52, 149, 52)
+#check input:checked ~ label,
+#check input:valid ~ label {
+	color: #00acd7;
 }
 
-button{
-    margin: 40px 0px;
-    margin-left: 10px;
-    width: calc(50% - 10px);
-    height: 60px;
-    background-color: rgb(5, 5, 69);
-    color: white;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 20px;
-    cursor: pointer;
-    
-}
+button {
+	/*auto  - Centraliza horizontalmente 
+	  o elemento em seu conteiner.*/ 
+	margin: 40px 0;
+	margin-left: 10px;
 
-button:hover{
-    opacity: 0.85;
-}
+	/* Ocupar metade do fieldset descontando a 
+	   margin de 10px*/
+	width: calc(50% - 10px);
+	height: 70px;
 
-#check{
-    margin-top: 55px;
-    width: 45%;
-    font-size: 14px;
-    height: 40px;
-    display: flex;
+	background-color: #00acd7;
+	color: #fff;
+	font-size: 20px;
+	border:none;
+	border-radius: 20px;
+
+	/* Muda o ponteiro do mouse.*/
+	cursor: pointer;
+
+	/* Linear - Mesma velocidade do início ao fim. */
+	transition: .3s linear;
 
 }
 
-form a{
-
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
-form a:hover{
-
-color: rgb(184, 184, 184);
-text-decoration: underline;
+button:hover {
+	/* Altera a transparência do elemento. */
+	opacity: 0.85;
 }
 
-div#decoracao{
-background-image: linear-gradient( to left, rgb(122, 122, 154), rgb(80, 80, 131), rgb(34, 34, 86),rgb(6, 6, 48),rgb(1, 1, 35));
-width: 1000px;
-height: 720px;
-max-width: 70vw;
-border-radius: 10px;
-box-shadow: 5px 5px 15px;
-transform: skew(6deg, 3deg);
-position: absolute;
-/*define ordem dos elementos sobrepostos*/
-z-index: -1 ;
+form a {
+	/* Remove a decoração padrão do elemento
+	   Na tag a "link" remove o traço inferior. */
+	text-decoration: none;
+
+	font-size: 16px;
+	color: #555;
+	font-weight: 500;
+	padding-top: 20px;
+
+	text-transform: uppercase;
+
+	text-align: center;
+
+	/*Exibe o elemento em bloco. 
+	Ele começa em uma nova linha e ocupa toda a largura.*/
+	display: block;
 }
+
+form a:hover {
+	color: #111;
+}
+
+section img {
+	width: 250px;
+	height: 250px;
+
+	/*auto  - Centraliza horizontalmente 
+	  o elemento em seu conteiner.*/
+	margin: auto 40px;
+}
+
+@media only screen and (max-width: 1080px)
+{
+    div#parallelogram{
+        height: 690px;
+    }
 section img{
-    height: 250px;
-    width: 250px;
-    margin: auto 40px;
+    display: none;
+
+
 }
+}
+
+@media only screen and (max-width: 510px){
+
+div#parallelogram{
+        display: none;
+    }
+
+section{
+    min-width: 95vw;
+}
+fieldset:nth-child(2), fieldset:nth-child(4),fieldset:nth-child(5){
+    flex-direction: column;
+}
+fieldset:nth-child(4){
+    padding: 0px;
+}
+div#check {
+width: 100%;
+margin-left: 0;
+}
+button{
+    width: 100%;
+}
+
+}
+
+
